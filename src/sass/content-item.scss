@@ -1,0 +1,78 @@
+.content_item {
+  width: 100%;
+  position: relative;
+  .content_item_head {
+    position: relative;
+    width: 100%;
+    height: rem(460px);
+    margin-bottom: rem(40px);
+    .content_head_img {
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .content_head_text {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: rem(180px);
+      height: rem(40px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #202530;
+      color: #ffffff;
+    }
+  }
+  h2 {
+    color: #202530;
+    font: 700 rem(35px)/1.3 "Proxima Nova";
+    position: relative;
+    margin-bottom: rem(60px);
+    &::before {
+      @include before_fig(70%, rem(3px), transparent);
+      bottom: rem(-30px);
+      background-color: #dddddd;
+    }
+  }
+}
+
+.content_item_text {
+  position: relative;
+  width: 100%;
+  p {
+    width: 100%;
+    margin-bottom: rem(30px);
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.content_item_img {
+  position: relative;
+  max-width: rem(400px);
+  width: 100%;
+  height: rem(280px);
+  float: right;
+  object-fit: cover;
+  margin-left: rem(50px);
+}
+
+.img_left {
+  float: left;
+  margin: 0 rem(50px) 0 0;
+}
+
+.control {
+  width: rem(240px);
+  margin-bottom: rem(55px);
+  .btn {
+    width: 100%;
+  }
+}

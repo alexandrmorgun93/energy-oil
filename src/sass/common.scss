@@ -1,0 +1,31 @@
+html {
+  font-size: 0.8334vw;
+}
+
+body {
+  color: #202530;
+  font: 400 rem(17px)/1.6 "Proxima Nova";
+}
+
+.container {
+  max-width: rem(1360px);
+  width: 100%;
+  margin: auto;
+}
+
+.btn {
+  width: rem(180px);
+  height: rem(50px);
+  background-image: $blue-color;
+  font-weight: 400;
+  letter-spacing: rem(0.34px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: .3s;
+  &:hover {
+    background: #0c3367;
+    color: #f6f6f6;
+  }
+}

@@ -1,0 +1,37 @@
+.energy_line {
+  width: 100%;
+  position: relative;
+  height: rem(60px);
+  background-color: #241e1e;
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 rem(90px);
+  }
+}
+
+.temperature {
+  position: relative;
+  p {
+    color: #ffffff;
+    font: 700 rem(20px)/1 "Proxima Nova";
+  }
+}
+
+.currencies {
+  display: flex;
+  p {
+    color: #ffffff;
+    font: 700 rem(20px)/1 "Proxima Nova";
+    margin-right: rem(25px);
+    &:last-child {
+      margin-right: 0;
+    }
+    i {
+      color: $red-color;
+      margin-right: rem(10px);
+    }
+  }
+}
